@@ -4,7 +4,8 @@
   "description": "\"Browser based game\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/VadimGrigoriev/ahj-homeworks/issues"
   },
-  "homepage": "https://github.com/VadimGrigoriev/ahj-homeworks/tree/main#readme"
+  "homepage": "https://github.com/VadimGrigoriev/ahj-homeworks/tree/main#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5"
+  },
+  "dependencies": {
+    "core-js": "^3.37.0"
+  }
 }
