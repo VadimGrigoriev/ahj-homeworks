@@ -18,7 +18,7 @@ test('The test of the parent levelUp method with zero health', () => {
 });
 
 test('Test of the parent damage method', () => {
-    const bowman = new Bowman('Igor', 'Bowman', 100, 1, 25, 25);
+    const bowman = new Bowman('Igor', 'Bowman');
     bowman.damage(10);
     expect(bowman.health).toBe(92.5);
 });

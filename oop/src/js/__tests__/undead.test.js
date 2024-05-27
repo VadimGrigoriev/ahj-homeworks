@@ -18,7 +18,7 @@ test('The test of the parent levelUp method with zero health', () => {
 });
 
 test('Test of the parent damage method', () => {
-    const undead = new Undead('Master', 'Undead', 100, 1, 25, 25);
+    const undead = new Undead('Master', 'Undead');
     undead.damage(10);
     expect(undead.health).toBe(92.5);
 });

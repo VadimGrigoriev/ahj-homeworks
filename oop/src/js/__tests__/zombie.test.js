@@ -19,7 +19,7 @@ test('The test of the parent levelUp method with zero health', () => {
 });
 
 test('Test of the parent damage method', () => {
-    const zombie = new Zombie('Hunt', 'Zombie', 100, 1, 40, 10);
+    const zombie = new Zombie('Hunt', 'Zombie');
     zombie.damage(10);
     expect(zombie.health).toBe(91);
 });

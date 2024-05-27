@@ -18,7 +18,7 @@ test('The test of the parent levelUp method with zero health', () => {
 });
 
 test('Test of the parent damage method', () => {
-    const daemon = new Daemon('Igor', 'Daemon', 100, 1, 10, 40);
+    const daemon = new Daemon('Igor', 'Daemon');
     daemon.damage(10);
     expect(daemon.health).toBe(94);
 });

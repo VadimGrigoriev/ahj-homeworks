@@ -18,7 +18,7 @@ test('The test of the parent levelUp method with zero health', () => {
 });
 
 test('Test of the parent damage method', () => {
-    const magician = new Magician('Vlad', 'Magician', 100, 1, 10, 40);
+    const magician = new Magician('Vlad', 'Magician');
     magician.damage(10);
     expect(magician.health).toBe(94);
 });

@@ -5,7 +5,7 @@ test('Throws an error when the name is invalid', () => {
 });
 
 test('Throws an error when the type is invalid', () => {
-    expect(() => new Character('Vadim', 'Programmer')).toThrowError('Недопустимый тип. Должен быть одним из следующих персонажей: Bowman, Swordsman, Magician, Undead, Zombie, Daemon');
+    expect(() => new Character('Vadim', 'Programmer')).toThrowError('Недопустимый тип. Должен быть одним из следующих персонажей: bowman, swordsman, magician, undead, zombie, daemon');
 });
 
 test('Creates a character with default values, level check', () => {
@@ -28,10 +28,4 @@ test('The levelUp method increases the level', () => {
     const character = new Character('Legolas', 'Bowman');
     character.health = 0;
     expect(() => character.levelUp()).toThrowError('Невозможно повысить уровень');
-});
-
-test('The damage method reduces health', () => {
-    const character = new Character('Leonardo', 'Swordsman', 100, 1, 50, 10);
-    character.damage(10);
-    expect(character.health).toBe(91);
 });
